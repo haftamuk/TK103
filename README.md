@@ -1,4 +1,4 @@
-Protocol/Model : GT06
+Protocol/Model : TK103
 
 Running the app: node index.js
 

@@ -9,6 +9,7 @@ var options = {
 var server = gps.server(options, function (device, connection) {
   device.on("connected", function (data) {
     console.log("I'm a new device connected");
+    console.log("DEVICE DATA : ", data.toString());
     return data;
   });
 
@@ -49,6 +50,6 @@ var server = gps.server(options, function (device, connection) {
   //Also, you can listen on the native connection object
   connection.on("data", function (data) {
     //echo raw data package
-    //console.log(data.toString());
+    console.log(data.toString());
   });
 });
